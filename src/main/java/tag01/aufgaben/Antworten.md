@@ -49,7 +49,7 @@
 
 **13. Welche Phase im Spiralmodell beinhaltet die Identifikation von Risiken?**
 
-👉 **Die erste Phase jedes Zyklus**: **Bestimmen von Zielen, Alternativen und Einschränkungen** / Risikoanalyse.
+👉 **Die erste Phase jedes Zyklus - Risikoanalyse**: **Bestimmen von Zielen, Alternativen und Einschränkungen** / Risikoanalyse.
 (Im klassischen Boehm‑Modell ist die Risikoanalyse ein eigener, zentraler Schritt.)
 
 **14. In welchem Modell wird die Projektabnahme formell durch den Auftraggeber durchgeführt?**
