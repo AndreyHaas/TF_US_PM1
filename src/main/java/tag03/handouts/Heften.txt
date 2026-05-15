@@ -1,0 +1,8 @@
+Zum Vergleich:
+
+Lastenheft → Sicht des Auftraggebers (Was wird gewünscht?)
+
+Pflichtenheft → Sicht des Auftragnehmers (Wie wird es realisiert?)
+
+Lastenheft      =   auftraggeber: "ich will das"
+Pflichtenheft   =   Auftragnehmer: "so würden wir das umsetzen"

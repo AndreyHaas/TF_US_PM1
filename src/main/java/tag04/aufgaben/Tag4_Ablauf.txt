@@ -1,0 +1,235 @@
+Kahoot-Quiz
+
+Projektplanung
+
+Arbeitspaket
+Teil des Projektes, der im Projektstrukturplan nicht weiter aufgegliedert ist und auf einer beliebigen Gliederungsebene liegen kann.
+	A part of the project that is not further subdivided within the Work Breakdown Structure 
+	and may reside at any level of the hierarchy.
+Regeln für Arbeitspakete
+	Beschreibung
+	Veantwortliche
+	in sich abgeschlossen
+	steuer- und kontrollierbar
+	das Ergebnis ist beschrieben
+Identifizierung der Arbeitpakete
+Grundlage von
+	Gliederung des Projektes
+	Abhängigkeiten zwischen Arbeitspaketen
+	Zuordnung der Ressourcen (personell, sachlich)
+	Ermittlung der Projektkosten
+
+Projektstrukturplan (PSP)
+	Baudiagram (Baumstruktur mit klarer Hierarchie)
+	1. Projektname
+	2. Oberbegriffe (Teilprojekt)
+	3. Aufgaben
+	4. Arbeitspakete, die zugeordnet wurden
+
+Beispiel
+Ebene 0: Projekt
+Ebene 1: Teilprojekte/Rubriken
+Ebene 2: Teilbereiche/Aufgaben
+Ebene 3: Arbeitspakete
+
+Projektstrukturplan - Gliederung
+
+- Objektorientierte Gliederung -> Objektorientierter Projektstrukturplan
+	0. Firma XYZ
+	1. Gebäude1, Gebäude2, Lager
+    Produkt / Bereiche im Fokus
+    Woran muss gearbeitet werden?
+
+- Funktionsorientierte Gliederung -> Funktionsorientierter Projektstrukturplan 
+	0. Firma XYZ
+	1. Verkabelung, Arbeitsplätze einrichten, Server aufstellen
+   Tätigkeiten im Fokus
+   Was ist zu tun?
+
+- Zeitorientierte/Phasen-orientierte Gliederung -> Phasenorientierter Projektstrukturplan
+	0. Firma XYZ
+	1. Planung, Ausführung, Abnahme
+   Phasen / Ablauf im Fokus
+   Wann ist was zu tun?
+
+- Beliebige Mischungen sind möglich -> Gemischtorientierter Projektstrukturplan
+	mehrere Ebenen möglich
+
+Top-Down-Ansatz (Analyse)
+	Vom Abstrakten (Projektziel)
+	Zum Konkreten (Arbeitspaket)
+	Grobe Beschreibung der Aufgaben -> detaillierte Beschreibungen der Unteraufgaben
+
+Bottom-Up Ansatz (Synthese)
+	Vom Konkreten (Arbeitspaket)
+	Zum Abstrakten (Projektziel)
+	Sinnvoll, wenn Details bekannt sind bevor der Gesamtplan entworfen wird
+
+Das Magische Dreieck
+Faktoren: Zeit, Kosten, Leistung (Ergebnis, Qualität)
+
+Minimalprinzip
+	Ziel ist vorgegeben
+	Minimaler Aufwand
+Maximalprinzip
+	Mittel sind vorgegeben
+	Maximaler Nutzen
+
+Meilensteine
+DIN 69 900: „ein Ereignis besonderer Bedeutung"
+Meilensteine sind wichtige Punkte im Projektverlauf, an denen ein bestimmtes Ziel erreicht oder ein bestimmtes Ergebnis erreicht sein soll.
+Meilensteine = auch Prüfpunkte oder Messpunkte
+Meilensteine haben keine Zeitdauer.
+
+Pause
+
+Projektmanagementsoftware
+Planung der Arbeitspakete, der Meilensteine und die sich daraus ergebenden Abhängigkeiten
+
+Methoden der Terminplanung
+• Vorgangsliste
+• Projektablaufplan oder Balken-/Gantt-Diagramm
+• Netzplantechniken
+• PERT (Program Evaluation and Review Technique)
+• CPM (Critical Path Method)
+• MPM (Metra-Potential-Method)
+
+Vorgangsliste, Projektablaufplan
+-> eine zeitliche Komponente hinzufügen
+• Der Ablaufplan wird als Balkendiagramm oder Netzplan dargestellt
+• Arbeitspakete um zwei Aspekte ergänzen:
+	• Logische Abhängigkeiten (Reihenfolge)
+	• Dauer jedes Pakets
+
+Vorgangsliste
+Tabelle: Nr., Vorgang (Beschreibung), Dauer, Vorgänger (bisherige Pakete)
+
+Projektablaufplan(PAP) – Gantt-Diagramm
+• Darstellung in Form eines Balkendiagramms
+• zeitliche Anordnung erfolgt nach Starttermin, Dauer und Ende
+• auch als vernetztes Balkendiagramm(Nutzung von Pfeilen) möglich
+• Anwendungssoftware: MSProject / openProject
+
+PM1_V08.pdf
+Netzplantechnik
+
+• Vorgangsknoten
+Jedes Arbeitspaket (Vorgang) wird als Vorgangsknoten dargestellt:
+	FAZ frühester Anfangzeitpunkt
+	FEZ frühester Endzeitpunkt
+	SAZ Spätester Anfangszeitpunkt
+	SEZ spätester Endzeitpunkt
+	D Dauer
+	GP Gesamtpufferzeit
+	FP freier Puffer
+
+• Phasen der Netzplantechnik
+
+1. Strukturanalyse
+	logische Abhängigkeit aller Arbeitspakete grafisch darstellen
+	Pfeilrichtung: von links nach rechts und vorzugsweise von oben nach unten
+	Ein Vorgang kann mehrere Vorgänger und/oder Nachfolger haben
+	Ein Netzplan darf KEINE Schleifen enthalten
+	Ununterbrochener Ablauf vom Startknoten bis zum Zielknoten 
+
+2. Vorwärtsrechnung
+	Projektanfangstermine -> Anfangs-und Endtermine (ggf. Dauer der Arbeitspakete) -> Gesamtdauer
+	Startvorgang beginnt mit einem FAZ von 0
+	FEZ = FAZ + Dauer
+	FEZ eines Vorgangs ist FAZ ALLER unmittelbarer nachfolgenden Vorgänge
+	FAZ eines Knotens mit mehrere vorgehenden Vorgängen = der größte FEZ ALLER Vorgänger
+
+3. Rückwärtsrechnung
+	wann spätestens mit den Arbeitspaketen begonnen werden muss, ohne den frühesten Endtermin zu gefährden.
+	FEZ des Zielknotens ist SEZ des Projekts
+	SAZ = SEZ – Dauer
+	SAZ eines Vorgangs ist SEZ ALLER unmittelbar vorausgehenden Vorgänge
+	Haben mehrere Vorgänge einen gemeinsamen Vorgänger, so ist
+dessen SEZ der früheste (kleinste) SAZ aller Nachfolger
+	ZUR KONTROLLE: Der SAZ des Startknotens muss den Wert 0 aufweisen
+
+4. Ermittlung der Zeitreserven (Puffer) und des kritischen Weges
+	GP (Gesamtpuffer) = SAZ - FAZ oder GP = SEZ – FEZ
+	FP(des Vorgangs A) = FAZ (des Nachfolgers B) - FEZ (des Vorgangs A)
+
+	Vorgänge ohne Zeitreserven sind kritische Vorgänge (kritischer Pfad)
+	Der kritische Weg (Pfad) ist die Kette aller kritischen Vorgänge
+
+	Gesamtpuffer
+	Zeitraum, um den eine Aktivität maximal verschoben werden kann,
+	ohne die spätesten Termine seiner Nachfolger zu verschieben
+
+	Freier Puffer
+	Zeitraum, um den eine Aktivität maximal verschoben werden kann,
+	ohne die frühesten Termine seiner Nachfolger zu verschieben
+
+Regeln Gesamt- und Freier Puffer
+• GP >= FP immer.
+• GP = FP = 0 <=> die Aktivität liegt auf dem kritischen Pfad
+
+Kritischer Pfad
+• der Kritische Pfad hat keinen Gesamtpuffer
+• der Kritische Pfad hat keinen freien Puffer
+• jede zeitliche Verzögerung verschiebt das Gesamtprojekt
+• wird durch rote Verbindungspfeile markiert -GP hier immer 0
+• Merken: wenn GP 0 = kritischer Pfad
+
+// Vorgang (Task / Aktivität), pl. Vorgänge
+// Synonyme Aufgabe, Tätigkeit, Task (Arbeitsknoten)
+// Vorgänger (Predecessor), pl. Vorgänger
+// Synonyme: Vorläufer, vorherige Aufgabe/Task.
+
+Pause
+
+PM1_04_Netzplan_Aufgaben.xlsx
+
+Aufgabe 1: Hausbau
+1. Struktur verstehen
+1 -> 2 -> 3
+2. Knoten kopieren (hier 3 Knoten)
+3. Pfeilen zeigen
+4. Beschreibung und Dauer ergänzen
+5. Obere Zeile
+FAZ 0 (plus Dauer 1) -> 1 (gleich) -> 1 (plus Dauer 5) -> 6 (gleich) -> 6 (plus Dauer 1) -> 7
+6. Niedrigste Zeile - von rechts nach links
+Letzte SEZ = letzte FAZ 7 (minus Dauer1) -> 6 (=) -> 6 (minus D 5) -> 1 (=) -> 1 (minus D 1) -> 0
+7. Puffer berechnen
+Alle 0
+Kritischen Pfad mit rot erkennen
+
+Aufgabe 2: Garten
+Start FAZ 0 (plus 1) -> 1
+für 2, 3, 4 FAZ = 1 (FEZ von 1)
+dann plus Dauer
+Dann für 5 = FAZ = größte von FEZ 2, 3, 4 = 6
+für 5: FEZ = 7 (Gesamtdauer des Projektes)
+
+rückwärts
+Letzte SEZ 7 (-1) SAZ 6 -> für 2, 3, 4 SEZ = 6
+SEZ minus Dauer für jeden Punkt
+dann für 1 nehmen wir die kleinste Wert von (5, 3, 1) als SEZ, also 1
+
+Puffer
+wo GP = FP = 0 => kritischer Pfad (rote Pfeile)
+GP berechnen (SEZ - FEZ = SAZ - FAZ)
+FP berechnen (FAZ des Nachfolgers minus FEZ)
+
+Aufgabe 3: Feier
+1. Struktur verstehen
+1 -> 2, 3 -> 4 (nach 3) -> 5 (nach 2, 4) -> 6
+
+2. Knoten kopieren (hier 6 Knoten)
+3. Pfeilen zeigen
+4. Beschreibung und Dauer ergänzen
+5. Obere Zeile
+Start immer mit 0
+für jedes Paket:
+FAZ = FEZ(vorherige)
+FEZ = FAZ + Dauer
+1) (0 - 2) (2 - 3) (2 - 5) (5 - 7) (7 - 8) (8 - 9)
+6. Niedrige Zeile - von rechts nach links
+(9 - 8) (8 - 7) (7 - 5) (5 - 2) (7 - 6) (min 2, 6 = 2 - 0)
+7. Puffer berechnen
+
+HA: Aufgaben Studie, Netzwerk
+
